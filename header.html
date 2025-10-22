@@ -4,16 +4,44 @@
     nav {
       font-family: 'Sporty Pro', sans-serif;
       font-size: 18px;
-    }
+      
+    /* --- LOGO STYLES (FIXED DIMENSIONS) --- */
     .logo {
-  float: left;
-  width: 1px;
-  height: 1px;
-}
+      /* THIS IS THE FIX: Set a reasonable, visible height/width */
+      height: 50px; 
+      width: auto; /* Maintains aspect ratio */
+      display: block;
+      border: none;
+    }
+    
+    .logo-link {
+      margin-right: 30px; /* Space between logo and first nav link */
+      display: block;
+      cursor: pointer;
+    }
+    
+    /* --- NAVIGATION BAR STYLES --- */
+    nav {
+      font-family: 'Sporty Pro', sans-serif;
+      font-size: 18px;
+    }
+
+    /* STYLES FOR THE INDIVIDUAL LINKS */
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 30px; 
+    }
+
+    /* HOVER EFFECT */
+    nav a:hover {
+      color: #f4b400;
+    }
   </style>
 </head>
 <body>
 <header>
+    <a href="index.html" class="logo-link">
   <img src="Riskaroo-Logo.png" alt="logo" />
 </div>
   <nav>
