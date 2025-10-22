@@ -1,48 +1,54 @@
-<head>
-  <link href="https://fonts.cdnfonts.com/css/sporty-pro" rel="stylesheet">
-  <style>
-    nav {
-      font-family: 'Sporty Pro', sans-serif;
-      font-size: 18px;
-    }
+<style>
+  /* --- 1. HEADER CONTAINER: Critical for dark background and layout --- */
+  header {
+    display: flex;             /* Makes logo and nav align horizontally */
+    align-items: center;       /* Centers them vertically */
+    justify-content: flex-start; /* Aligns content to the left */
+    background-color: #111;    /* The dark background for the whole bar */
+    padding: 10px 20px;        /* Padding for the entire bar */
+  }
 
-    /* --- LOGO STYLES --- */
-    .logo {
-      height: 50px; 
-      width: auto; 
-      display: block;
-      border: none;
-    }
+  /* --- 2. LOGO LINK & IMAGE STYLES --- */
+  .logo-link {
+    display: block;
+    margin-right: 30px;        /* Spacing between logo and HOME link */
+  }
 
-    .logo-link {
-      margin-right: 30px; 
-      display: block;
-      cursor: pointer;
-    }
+  .logo {
+    height: 50px;              /* Sets a fixed, visible size */
+    width: auto;               /* Keeps aspect ratio correct */
+    display: block;
+    border: none;
+  }
+  
+  /* --- 3. NAVIGATION STYLES --- */
+  nav {
+    font-family: 'Sporty Pro', sans-serif;
+    font-size: 18px;
+    /* Nav itself doesn't need flex/background as the <header> handles it */
+  }
 
-    /* STYLES FOR THE INDIVIDUAL LINKS */
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 30px; 
-    }
+  nav a {
+    color: white;              /* Text color for links */
+    text-decoration: none;
+    margin-right: 30px;        /* Spacing between the navigation links */
+  }
 
-    /* HOVER EFFECT */
-    nav a:hover {
-      color: #f4b400;
-    }
-  </style>
-</head>
+  nav a:hover {
+    color: #f4b400;            /* Yellow/Gold hover color */
+  }
+</style>
 <body>
   <header>
     <a href="index.html" class="logo-link">
-      <img src="Riskaroologo.png" alt="logo" class="logo" />
+      <img src="Riskaroologo.png" alt="logo">
     </a>
+    
     <nav>
-      <a href="index.html">Home</a>
-      <a href="my_bets.html">My Bets</a>
-      <a href="rewards.html">Rewards</a>
-      <a href="help.html">Help</a>
+      <a href="index.html">HOME</a>
+      <a href="my_bets.html">MY BETS</a> 
+      <a href="rewards.html">REWARDS</a>
+      <a href="help.html">HELP</a>
     </nav>
   </header>
-</body>
+  </body>
