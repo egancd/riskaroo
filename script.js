@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function loadGames() {
-  const res = await fetch("https://sports-betting-backend.onrender.com/api/games");
+  const res = await fetch("https://sports-betting-backend-vkc2.onrender.com");
   const games = await res.json();
 
   const list = document.getElementById("games-list");
