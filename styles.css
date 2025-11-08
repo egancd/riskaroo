@@ -21,3 +21,27 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.center-graphic {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b5d56e
+}
+
+.top-leagues {
+  width: 18%;
+  margin-left: 10px;
+  background-color: #e8e8e8;
+}
+
+.my-bets {
+  width: 18%;
+  background-color: #e8e8e8
+}
+a
+article {
+  display:inline-table;
+  margin: 5 px;
+  padding: 15px;
+  color: #333;
+}
