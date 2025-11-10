@@ -32,13 +32,18 @@ nav a:hover {
   width: 18%;
   margin-left: 10px;
   background-color: #e8e8e8;
+  text-align: center;
 }
 
 .my-bets {
   width: 18%;
   background-color: #e8e8e8
 }
-a
+
+.my-bets h1 {
+  text-align: center;
+}
+
 article {
   display:inline-table;
   margin: 5 px;
