@@ -13,6 +13,22 @@
   <h1>College Football Week 1 Games</h1>
     <button onclick="loadGames()">Load Games</button>
     <ul id="games-list"></ul>
+
+  <div class ="beth-mech">
+    <div class="balance">
+     Balance: <span id="balance">100</span> tokens
+    </div>
+
+    <form id="bet-form">
+      <label for="bet-amount">Enter your bet:</label>
+      <input type="number" id="bet-amount" min="1" placeholder="Enter amount" required>
+      
+      <button type="submit">Place Bet</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
   <!-- Load the JavaScript file -->
   <script src="script.js"></script>
 </body>

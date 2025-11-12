@@ -11,22 +11,38 @@
   <div id="header-placeholder"></div>
 
   <!-- <img src="Riskaroo.JPEG" alt="Example format" height="792" width="612"> -->
-  <article class="top-leagues">
-    <h1>Top Leagues</h1>
-    <p><a href="my_bets.html">Premier League</a></p>
-    <p><a href="my_bets.html">NFL</a></p>
-    <p><a href="my_bets.html">NCAA</a></p>
-    <p><a href="my_bets.html">NBA</a></p>
-  </article>
-  <article class="center-graphic">
-    <h1>RISKAROO</h1>
-    <h2>some slogan here.</h2>
-    <img src="centralgraphic.jpeg" alt="example graphic">
-  </article>
-  <article class="my-bets">
-    <h1>My Bets</h1>
-    <p>No Bets.</p>
-  </article>
+  <div class="home-parent">
+    <article class="home-child top-leagues">
+      <h1>Top Leagues</h1>
+      <div><a href="my_bets.html">
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/football.png" alt="football" class="leagues"/>
+        <p class="leagues">Premier League</p>
+      </a></div>
+      <div><a href="my_bets.html">
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/american-football.png" alt="american-football" class="leagues"/>
+        <p class="leagues">NFL</p>
+      </a></div>
+      <div><a href="my_bets.html">
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/american-football.png" alt="american-football" class="leagues"/>
+        <p class="leagues">NCAA</p>
+      </a></div>
+      <div><a href="my_bets.html">
+        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/basketball.png" alt="basketball" class="leagues"/>
+        <p class="leagues">NBA</p>
+      </a></div>
+    </article>
+    <article class="home-child center-graphic">
+      <a href="my_bets.html">  
+        <img src="graphuc.svg" alt="graphic">
+      </a>
+    </article>
+    <article class="home-child my-bets">
+      <h1>My Bets</h1>
+      <div class="bet-slip">
+        <p>No Bets.</p>
+      </div>
+    </article>
+  </div>
 
   <!-- Load the JavaScript file -->
   <script src="script.js"></script>
