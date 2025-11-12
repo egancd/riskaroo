@@ -88,6 +88,60 @@ nav a:hover {
   color: #333;
 }
 
+.bets-page {
+  margin: auto;
+  width: 95%;
+  padding-left:10px
+}
+
+.bet-entry {
+  margin-top: 10px;
+}
+
+.rewards {
+  width: 90%;
+  margin:auto;
+}
+
+.rewards h1 {
+  font-size: 50px;
+}
+
+.rewards h2 {
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+.rewards h3 {
+  text-align: right;
+}
+
+progress {
+  width: 100%;
+  height: 50px;
+  /* Reset default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Style the track (empty part) */
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+  background-color: #b5d56e; /* Filled color for Firefox */
+  border-radius: 10px;
+}
+
+/* Style the filled portion */
+progress::-webkit-progress-value {
+  background-color: #b5d56e;
+  border-radius: 10px;
+}
+
 #hotline a {
   color: #333;
 }
