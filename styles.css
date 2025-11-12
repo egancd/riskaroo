@@ -27,6 +27,16 @@ nav a:hover {
   margin-right: auto;
 }
 
+#recent-games {
+  width: 100%;
+  min-height: 300px;
+  background-color:#b5d56e;
+}
+
+#recent-games h1 {
+  text-align: center;
+}
+
 .top-leagues {
   width: 18%;
   margin-left: 10px;
