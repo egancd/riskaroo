@@ -5,9 +5,9 @@ const BACKEND_URL = "https://sports-betting-backend-vkc2.onrender.com";
  * This is your reusable function.
  * @returns {Promise<Array|null>} The game data array, or null if an error occurs.
  */
-async function fetchGameData() {
+async function fetchGameData(weekNumber) {
   try {
-    const response = await fetch(BACKEND_URL + "/api/games");
+    const response = await fetch(BACKEND_URL + `/api/games?week=${weekNumber}`);
     
     if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -34,7 +34,6 @@ function formatGamesAsList(gameData) {
     return "<p>No games found for this week.</p>";
   }
 
-  // Use .map() to loop over the data and create an HTML string for each game
   const gameItems = gameData.map(game => {
     // Access the data properties (e.g., game.home_team, game.home_points)
     // Adjust these keys based on your actual API response!
@@ -84,14 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
     loadButton.addEventListener("click", async () => {
       console.log("Button clicked!");
 
-      statusElement.textContent = "Loading...";
+      const weekInput = document.getElementById("week-input");
+      const weekNumber = weekInput.value;
+
+      statusElement.textContent = `Loading games for week ${weekNumber}...`;
       container.innerHTML = "";
       loadButton.disabled = true; // Disable button while loading
 
-      const allGameData = await fetchGameData();
+      const allGameData = await fetchGameData(weekNumber);
 
       if (allGameData) {
-        // Success!
         statusElement.textContent = "Data loaded successfully!";
         
         const gameListHtml = formatGamesAsList(allGameData);
