@@ -10,13 +10,11 @@
   <!-- Placeholder for the shared navigation bar -->
   <div id="header-placeholder"></div>
 
-  <h1>College Football Week 1 Games</h1>
-    <button onclick="loadGames()">Load Games</button>
-    <ul id="games-list"></ul>
+  <h1>College Football Games</h1>
 
   <div class ="beth-mech">
     <div class="balance">
-     Balance: <span id="balance">100</span> tokens
+     Balance: <span id="balance"></span> tokens
     </div>
 
     <form id="bet-form">
@@ -29,6 +27,13 @@
     <div class="result" id="result"></div>
   </div>
 
+  <button id="load-games-button">Load Game Result</button>
+
+  <div id="loading-status"></div>
+
+  <div id="games-list-container"></div>
+
+  <div id="outcome"></div>
   <!-- Load the JavaScript file -->
   <script src="script.js"></script>
 </body>
